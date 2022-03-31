@@ -4,7 +4,7 @@ local colors = core.get_colors()
 local night = {}
 
 night.normal = {
-  a = { bg = colors.color5, fg = colors.background },
+  a = { bg = colors.color6, fg = colors.background },
   b = { bg = colors.background, fg = colors.color7 },
   c = { bg = colors.background, fg = colors.foreground },
 }
@@ -20,7 +20,7 @@ night.command = {
 }
 
 night.visual = {
-  a = { bg = colors.color6, fg = colors.background },
+  a = { bg = colors.color5, fg = colors.background },
   b = { bg = colors.background, fg = colors.color6 },
 }
 
