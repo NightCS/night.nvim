@@ -2,7 +2,7 @@ local M = {}
 
 function M.get_colors()
   return {
-    contrast = '#000102',
+    contrast = '#0A1419',
     background = "#061115",
     foreground = "#D9D7D6",
     cursor = "#D9D7D6",
@@ -14,14 +14,14 @@ function M.get_colors()
     color5 = "#BC83E3",
     color6 = "#67AFC1",
     color7 = "#D9D7D6",
-    color8 = "#1C252C",
-    color9 = "#DF5B61",
-    color10 = "#78B892",
-    color11 = "#DE8F78",
-    color12 = "#6791C9",
-    color13 = "#BC83E3",
-    color14 = "#67AFC1",
-    color15 = "#D9D7D6",
+    color8 = "#484e5b",
+    color9 = "#f16269",
+    color10 = "#8cd7aa",
+    color11 = "#e9967e",
+    color12 = "#79aaeb",
+    color13 = "#c488ec",
+    color14 = "#7acfe4",
+    color15 = "#e5e5e5",
   }
 end
 
