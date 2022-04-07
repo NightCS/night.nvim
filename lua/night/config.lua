@@ -18,13 +18,13 @@ M.highlights_base = function (colors)
     PmenuSel = { guifg = colors.background, guibg = colors.color4 },
     WildMenu = { guifg = colors.color7, guibg = colors.color4 },
     CursorLineNr = { guifg = colors.color0 },
-    Comment = { guifg = colors.color0 },
+    Comment = { guifg = vim.o.background == 'dark' and colors.color0 or colors.color7 },
     Folded = { guifg = colors.color4, guibg = colors.background },
     FoldColumn = { guifg = colors.color4, guibg = colors.background },
-    LineNr = { guifg = colors.color0, guibg = colors.background },
+    LineNr = { guifg = vim.o.background == 'dark' and colors.color0 or colors.light_bg, guibg = colors.background },
     FloatBorder = { guifg = colors.background, guibg = colors.background },
     Whitespace = { guifg = colors.color1 },
-    VertSplit = { guifg = colors.background, guibg = colors.color0 },
+    VertSplit = { guifg = colors.background, guibg = vim.o.background == 'dark' and colors.color0 or colors.light_bg },
     CursorLine = { guibg = colors.background },
     CursorColumn = { guibg = colors.background },
     ColorColumn = { guibg = colors.background },
@@ -116,7 +116,7 @@ M.highlights_base = function (colors)
     -- TSComment           = { };    -- For color1 blocks.
     TSAttribute = { guifg = colors.color4 },
     TSNote = { guifg = colors.background, guibg = colors.color5 },
-    TSComment = { guifg = colors.color8 },
+    TSComment = { guifg = vim.o.background == 'dark' and colors.color8 or colors.color7 },
     TSWarning = { guifg = colors.background, guibg = colors.color5 },
     TSDanger = { guifg = colors.background, guibg = colors.color3 },
     TSConstructor = { guifg = colors.color4 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
@@ -215,7 +215,7 @@ M.highlights_base = function (colors)
     TelescopeSelection = { guifg = colors.background, guibg = colors.color2 },
 
     -- Indent Blank Line
-    IndentBlanklineChar = { guifg = colors.color0, guibg = colors.background },
+    IndentBlanklineChar = { guifg = vim.o.background == 'dark' and colors.color0 or colors.light_bg, guibg = colors.background },
 
     -- NvimTree
     NvimTreeNormal = { guifg = colors.foreground, guibg = colors.background },
@@ -225,7 +225,7 @@ M.highlights_base = function (colors)
     NvimTreeGitNew = { guifg = colors.color4 },
     NvimTreeGitDeleted = { guifg = colors.color11 },
     NvimTreeSpecialFile = { guifg = colors.color6 },
-    NvimTreeIndentMarker = { guifg = colors.color0 },
+    NvimTreeIndentMarker = { guifg = vim.o.background == 'dark' and colors.color0 or colors.light_bg },
     NvimTreeImageFile = { guifg = colors.foreground },
     NvimTreeSymlink = { guifg = colors.color7 },
     NvimTreeFolderIcon = { guifg = colors.color2, guibg = colors.background },
@@ -256,7 +256,7 @@ M.highlights_base = function (colors)
 
     -- BufferLine
     BufferLineIndicatorSelected = { guifg = colors.color2 },
-    BufferLineFill = { guifg = colors.background, guibg = colors.background },
+    BufferLineFill = { guifg = colors.foreground, guibg = colors.background },
   }
 end
 

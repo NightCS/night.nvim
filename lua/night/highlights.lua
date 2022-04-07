@@ -9,11 +9,13 @@ function M.highlight_all(colors, opts)
   end
   local ntree = opts.nvim_tree or { contrast = false }
   if ntree.contrast == true then
-    hi('NvimTreeNormal', { guibg = colors.contrast })
-    hi('NvimTreeNormalNC', { guibg = colors.contrast })
+    hi('NvimTreeNormal', { guibg = colors.contrast, guifg = colors.foreground })
+    hi('NvimTreeNormalNC', { guibg = colors.contrast, guifg = colors.foreground })
     hi('NvimTreeEndOfBuffer', { guibg = colors.contrast, guifg = colors.contrast })
     hi('NvimTreeEndOfBufferNC', { guibg = colors.contrast, guifg = colors.contrast })
     hi('NvimTreeVertSplit', { guifg = colors.background, guibg = colors.background })
+    hi('NvimTreeFolderIcon', { guibg = colors.contrast })
+    hi('NvimTreeIndentMarker', { guibg = colors.contrast })
   end
 end
 
