@@ -56,7 +56,7 @@ M.highlights_base = function (colors)
     Question = { guifg = colors.color5 },
     EndOfBuffer = { guifg = colors.background },
     NonText = { guifg = colors.color1 },
-    Variable = { guifg = colors.color5 },
+    Variable = { guifg = colors.color6 },
     String = { guifg = colors.color2 },
     Character = { guifg = colors.color12 },
     Constant = { guifg = colors.color5 },
@@ -64,24 +64,24 @@ M.highlights_base = function (colors)
     Boolean = { guifg = colors.color5 },
     Float = { guifg = colors.color5 },
     Identifier = { guifg = colors.color5 },
-    Function = { guifg = colors.color6 },
-    Operator = { guifg = colors.color6 },
-    Type = { guifg = colors.color5 },
+    Function = { guifg = colors.color4 },
+    Operator = { guifg = colors.color5 },
+    Type = { guifg = colors.color6 },
     StorageClass = { guifg = colors.color7 },
     Structure = { guifg = colors.color6 },
     Typedef = { guifg = colors.color6 },
-    Keyword = { guifg = colors.color6 },
-    Statement = { guifg = colors.color6 },
-    Conditional = { guifg = colors.color6 },
+    Keyword = { guifg = colors.color5 },
+    Statement = { guifg = colors.color5 },
+    Conditional = { guifg = colors.color5 },
     Repeat = { guifg = colors.color6 },
     Label = { guifg = colors.color4 },
     Exception = { guifg = colors.color6 },
-    Include = { guifg = colors.color6 },
+    Include = { guifg = colors.color5 },
     PreProc = { guifg = colors.color6 },
-    Define = { guifg = colors.color6 },
+    Define = { guifg = colors.color5 },
     Macro = { guifg = colors.color6 },
-    PreCondit = { guifg = colors.color6 },
-    Special = { guifg = colors.color6 },
+    PreCondit = { guifg = colors.color5 },
+    Special = { guifg = colors.color5 },
     SpecialChar = { guifg = colors.foreground },
     Tag = { guifg = colors.color4 },
     Debug = { guifg = colors.color11 },
@@ -143,9 +143,9 @@ M.highlights_base = function (colors)
     -- TSNone              = { };    -- TODO: docs
     TSNumber = { guifg = colors.color1 },
     TSOperator = { guifg = colors.color5 }, -- For any operator: `+`, but also `->` and `*` in C.
-    TSParameter = { guifg = colors.color7 }, -- For parameters of a function.
-    -- TSParameterReference= { };    -- For references to parameters of a function.
-    TSProperty = { guifg = colors.color6 }, -- Same as `TSField`.
+    TSParameter = { guifg = colors.color9 }, -- For parameters of a function.
+    TSParameterReference = { guifg = colors.color5 };    -- For references to parameters of a function.
+    TSProperty = { guifg = colors.color7 }, -- Same as `TSField`.
     TSPunctDelimiter = { guifg = colors.color7 }, -- For delimiters ie: `.`
     TSPunctBracket = { guifg = colors.foreground }, -- For brackets and parens.
     TSPunctSpecial = { guifg = colors.color7 }, -- For special punctutation that does not fall in the catagories before.
@@ -160,7 +160,7 @@ M.highlights_base = function (colors)
     TSVariable = { guifg = colors.color7 },
     TSVariableBuiltin = { guifg = colors.color6 }, -- Variable names that are defined by the languages, like `this` or `self`.
 
-    -- TSTag               = { };    -- Tags like html tag names.
+    TSTag               = { guifg = colors.color4 };    -- Tags like html tag names.
     -- TSTagDelimiter      = { };    -- Tag delimiter like `<` `>` `/`
     -- TSText              = { };    -- For strings considered text in a markup language.
     TSTextReference = { guifg = colors.color6 },
